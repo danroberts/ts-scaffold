@@ -15,8 +15,8 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/*.js',
-      'test/*.js'
+      'src/*.ts',
+      'test/*.ts'
     ],
 
 
@@ -28,6 +28,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      '**/*.ts': ['typescript']
     },
 
 
@@ -65,6 +66,16 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
+    concurrency: Infinity,
+
+    typescriptPreprocessor: {
+      options: {
+        sourceMap: true, // generate source maps
+        noResolve: false // enforce type resolution
+      },
+      transformPath: function(path) {
+        return path.replace(/\.ts$/, '.js');
+      }
+    }
   })
 }

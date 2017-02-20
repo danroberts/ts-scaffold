@@ -1201,6 +1201,12 @@ karma-phantomjs-launcher@^1.0.2:
     lodash "^4.0.1"
     phantomjs-prebuilt "^2.1.7"
 
+karma-typescript-preprocessor@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/karma-typescript-preprocessor/-/karma-typescript-preprocessor-0.3.1.tgz#a4ed4976af02a0801d17843756ad8ccc80053d5a"
+  dependencies:
+    typescript "^2.1.4"
+
 karma@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/karma/-/karma-1.5.0.tgz#9c4c14f0400bef2c04c8e8e6bff59371025cc009"
@@ -2109,6 +2115,10 @@ typedarray@~0.0.5:
 typescript@^2.1.4:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.2.0.tgz#626f2fc70087d2480f21ebb12c1888288c8614e3"
+
+typescript@^2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.1.6.tgz#40c7e6e9e5da7961b7718b55505f9cac9487a607"
 
 typings-core@^2.2.0:
   version "2.2.0"
