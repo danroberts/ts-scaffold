@@ -1,11 +1,12 @@
 {
-  "name": "js-scaffold",
+  "name": "ts-scaffold",
   "version": "1.0.0",
-  "description": "A scaffold project for javascript",
+  "description": "A scaffold project for typescript, jasmine, karma, webpack",
   "main": "index.js",
   "author": "Daniel Roberts",
   "license": "MIT",
   "scripts": {
+    "postinstall": "typings install --overwrite --save",
     "test": "scripts/test",
     "test:watch": "scripts/test-dev"
   },
