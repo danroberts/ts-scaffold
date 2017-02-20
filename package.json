@@ -1,0 +1,22 @@
+{
+  "name": "js-scaffold",
+  "version": "1.0.0",
+  "description": "A scaffold project for javascript",
+  "main": "index.js",
+  "author": "Daniel Roberts",
+  "license": "MIT",
+  "scripts": {
+    "test-dev": "scripts/test-dev"
+  },
+  "dependencies": {
+    "global": "^4.3.1",
+    "karma": "^1.5.0",
+    "karma-cli": "^1.0.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2"
+  }
+}
