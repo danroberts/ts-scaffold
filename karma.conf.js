@@ -1,6 +1,8 @@
 // Karma configuration
 // Generated on Mon Feb 20 2017 13:15:58 GMT-0800 (PST)
 
+var webpackConfig = require('./webpack.config.js');
+
 module.exports = function(config) {
   config.set({
 
@@ -15,7 +17,6 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'src/*.ts',
       'test/*.ts'
     ],
 
@@ -28,9 +29,10 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      '**/*.ts': ['typescript']
+      'test/**/*.ts': ['webpack']
     },
 
+    webpack: webpackConfig,
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
@@ -67,15 +69,5 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity,
-
-    typescriptPreprocessor: {
-      options: {
-        sourceMap: true, // generate source maps
-        noResolve: false // enforce type resolution
-      },
-      transformPath: function(path) {
-        return path.replace(/\.ts$/, '.js');
-      }
-    }
   })
 }

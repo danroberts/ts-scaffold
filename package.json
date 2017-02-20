@@ -6,7 +6,8 @@
   "author": "Daniel Roberts",
   "license": "MIT",
   "scripts": {
-    "test-dev": "scripts/test-dev"
+    "test": "scripts/test",
+    "test:watch": "scripts/test-dev"
   },
   "dependencies": {
     "global": "^4.3.1",
@@ -18,8 +19,10 @@
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.2",
-    "karma-typescript-preprocessor": "^0.3.1",
+    "karma-webpack": "^2.0.2",
+    "ts-loader": "^2.0.0",
     "typescript": "^2.1.6",
-    "typings": "^2.1.0"
+    "typings": "^2.1.0",
+    "webpack": "^2.2.1"
   }
 }
